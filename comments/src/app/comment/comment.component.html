@@ -1,0 +1,55 @@
+<head>
+	<style type="text/css">
+		.container-fluid{
+      border: 25px solid lightblue;
+      padding: 25px;
+      /*text-align: center;*/
+
+    }
+	</style>
+</head>
+<h1 style="text-align: center; font-family: GreatVibes"><font size="12" >Adding Comments</font></h1>
+<div  class="container-fluid">
+<form>
+ <!--  <label>Enter your name:</label>
+  <input name="firstname" type="text"> -->
+  <div>
+   <label>Username</label>
+   <input type="text" id="userName" name="username" [ngModel]="user.username"
+     required minlength="3" #username="ngModel">
+   <small [hidden]="username.valid || (username.pristine &&
+     !f.submitted)">
+   </small>
+</div>
+  <br><br>
+  <label>Add a comment:</label>
+
+  <br>
+  <textarea rows="5" cols="50" required minlength="1" id = "cmnt"></textarea>
+  <br>
+  <br>
+  <div>
+   <label>Password</label>
+   <input type="password" name="password" [ngModel]="user.password"
+     required #password="ngModel" required validateEqual="SecretKey" pattern="SecretKey">
+   <small [hidden]="password.valid || (password.pristine &&
+     !f.submitted)"> Enter Secret Key
+   </small>
+</div>
+
+  <br>
+  <br>
+  <button type="submit" onclick="PrintComments()">Submit</button>
+  <!-- function PrintComments(){} -->
+  <script type="text/javascript">
+
+      // userName = document.getElementbyId("username").value;
+       comment = document.getElementbyId("cmnt").value;
+
+        document.getElementById("cmnt").innerHTML = ;
+
+  </script>
+
+</form>
+
+</div>
