@@ -1,0 +1,30 @@
+	h1{
+  		background-color: rgb(25,14,142);
+  		font-family: 'Great Vibes';
+  	}
+
+  	body{
+  		padding-left: 35px;
+  		padding-right: 35px;
+  		padding-top: 0px;
+  		padding-bottom: 10px;
+  	}
+
+    .button {
+  		background-color: white;
+  		color: black;
+  		font-size: 20px;
+  		border: 2px solid #555555;
+  		border-radius: 50%;
+
+	}
+
+	.button:hover {
+ 		background-color: darkblue;
+  		color: white;
+	}
+
+	p.questionNum{
+		font-size: 20px;
+	}
+
