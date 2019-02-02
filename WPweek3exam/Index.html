@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="Index.js"></script>
+	</head>
+	<body>
+		<div class = "container">
+
+				<div class = "col-sm-4 well" class = "imageHT" id = "imageHTm">
+
+
+				</div>
+				<div class = "col-sm-8 well">
+					<div class = "row">
+						<h1 class = "titleHT" id ="titleHTm"></h1>
+						<hr>
+					</div>
+					<div class = "row">
+						<h4 class = "descriptionHT" id = "descriptionHTm"> </h4>
+					</div>
+					<br>
+					<div class = "row">
+						<h5 class = "quantityHT" id = "quantityHTm"> </h5>
+					</div>
+					<br><br>
+					<button class= "EditButton"  style="margin-right: 16px" onclick="ed()"> Edit</button>
+					<button class = "DeleteButton" onclick="del()"> Delete</button>
+                    <br><br>
+					<form id = "form">
+            	Title : <input type="text" name="titleF" ><br><br>
+            	Description : <br><textarea rows="5" cols="15"></textarea><br><br>
+            	Quantity : <input type="text" name="quant">
+            </form>
+
+				</div>
+				<div class = "row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary" id = 'previous' onclick="prevpressed()">Previous</button>
+            </div>
+            <div class="col-md-6" align="right">
+                <button type="button" class="btn btn-primary" id = 'next' onclick="nextpressed()">next</button>
+            </div>
+
+        </div>
+			</div>
+
+	</body>
+</html>

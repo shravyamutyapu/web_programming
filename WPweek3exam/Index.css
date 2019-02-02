@@ -1,0 +1,25 @@
+body{
+	padding-top: 25px;
+}
+
+.titleHT{
+   text-align: center;
+   size: 25;
+   font-family: "Times New Roman", Times, serif;
+   height: 100px;
+
+    margin: 0%;
+}
+.descriptionHT{
+	height: 100px;
+    margin: 0%;
+	size: 14;
+}
+
+#imageHTm{
+	height: 150px;
+	width: 300px;
+    margin: 0%;
+    padding: 0px;
+}
+
