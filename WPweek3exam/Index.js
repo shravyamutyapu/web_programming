@@ -88,10 +88,10 @@ function del(){
 	delete1(i);
 }
 
-function edit(i){
- document.getElementById("form"). =
-}
+// function edit(i){
+//  document.getElementById("form"). =
+// }
 
-function ed(){
-	edit(i);
-}
+// function ed(){
+// 	edit(i);
+// }
