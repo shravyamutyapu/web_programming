@@ -1,0 +1,23 @@
+<div class="col-xs-8">
+  <br>
+  <br>
+  <br>
+  <br>
+<img src = "/assets/img2.jpg">
+</div>
+
+<div class="col-xs-4">
+  <br>
+  <br>
+    <div class="login-page">
+      <div class="form">
+        <form id="login-form">
+          <input type="text" [(ngModel)] = "username" name = "nme" placeholder="username"/>
+          <input type="password" [(ngModel)] = "password" name = "pw"placeholder="password"/>
+          <button (click) = "submit()">login</button>
+          <div *ngIf = "temp== true">Enter the valid username or Password</div>
+          <p class="message">New user? <a routerLink="/signup">Sign up now!!!</a></p>
+        </form>
+        <button routerLink = "/home">Log Out</button>
+      </div>
+    </div>

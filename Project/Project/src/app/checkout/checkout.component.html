@@ -1,0 +1,16 @@
+<div class= "container well">
+        UserName : {{uname}}
+        <br>
+        <br>
+        Address :
+        <form>
+        <br><textarea id = "address" rows="5" cols="30" required minlength="5"></textarea>
+        <br>
+    </form>
+    <br>
+
+        Total Amount : <b>{{finaltotal}}</b>
+        <br><br>
+        <button (click)="PlaceOrder()" class="button5">Confirm order</button>
+
+</div>

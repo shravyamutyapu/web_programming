@@ -1,0 +1,31 @@
+<div class="card mb-3">
+    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+    <div *ngIf = "object!=null">
+      <div class="container">
+        <div class = "col-xs-5">
+            <img src="../assets/img/{{object[index].image}}" alt="image" width = 100 height = 200> 
+        </div>
+        <div class="col-xs-1">
+
+        </div>
+        <div class = "col-xs-6">
+          <h4 class="card-title">{{object[index].name}}</h4>
+          <p class="card-text">{{object[index].description}}</p>
+          <!-- <p class="card-text">{{object[index].quantity}}</p>  -->
+          <p>Price: {{object[index].price}}</p>
+          <p>Quantity: {{object[index].quantity}}</p>
+          <p class = "ship"><strong><i>*No Shipping charges on orders above 2000/- </i></strong></p>
+          <!-- <button color="primary" routerLink="/home" class=" 	glyphicon glyphicon-arrow-left"></button>&nbsp; -->
+          <button class = "button" (click)="addToCart()"> Add to cart</button><br><br>
+          <!-- <div *ngIf = "added">
+              <p> product added to the cart</p>
+          </div> -->
+          <!-- <textarea name = "review" [(ngModel)] = "rview" placeholder="Review"></textarea> -->
+          <input type="text"  id="1" [(ngModel)] = "rview" placeholder="Review">&nbsp;
+          <div class = "c"><button type= "submit" class = "button1" (click)= "review()">Submit Review</button></div>
+        
+      </div> 
+      </div>
+    </div>
+  </div>
+

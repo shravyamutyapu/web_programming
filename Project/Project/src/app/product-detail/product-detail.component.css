@@ -1,0 +1,19 @@
+textarea {
+    width: 50%;
+    height: 100%;
+}
+
+.c {
+    padding-left: 200px;
+}
+.button{
+    background-color: #008CBA;
+    border-radius: 12px;
+}
+.button1{
+    background-color: #4CAF50;
+    border-radius: 24px;
+}
+.ship{
+    color : green;
+}
